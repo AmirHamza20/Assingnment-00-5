@@ -55,5 +55,53 @@
   </section>
 
 
+
+
+  <section class="max-w-[1250px] mx-auto mt-6 mb-5 flex flex-col lg:flex-row gap-5 px-2 lg:px-0">
+
+       <!-- Cards Section  -->
+
+        <div class="w-full lg:w-[75%] grid grid-cols-2 lg:grid-cols-3 gap-4">
+          
+        <!-- Card number 1 -->
+            <div class="card bg-white shadow-lg rounded-2xl p-4 space-y-2">
+              <div class="flex justify-between items-center">
+                <img src="assets/emergency.png" alt="emergency" class="w-8 h-8">
+                <img class="cardHeart w-5 h-5 cursor-pointer" src="assets/Vector (1).png" alt="icon">
+              </div>
+              <h2 class="serviceName text-lg font-bold text-gray-800">National Emergency</h2>
+              <p class="text-base text-gray-600">Emergency</p>
+              <p class="serviceNumber text-2xl font-extrabold text-black mt-1">999</p>
+              <p class="text-sm text-gray-700 bg-gray-200 px-2 py-[3px] rounded-full inline-block">All</p>
+              <div class="flex gap-1 mt-2">
+                <button class="copyBtn flex items-center justify-center gap-1 w-1/2 px-1 py-1 border rounded-lg text-gray-700 hover:bg-gray-100 text-sm">
+                  <img src="assets/copy.png" alt="copy" class="w-3 h-3"> Copy
+                </button>
+                <button class="callBtn flex items-center justify-center gap-1 w-1/2 px-1 py-1 bg-green-500 text-white rounded-lg hover:bg-green-600 text-sm">
+                  <img src="assets/Vector (2).png" alt="call" class="w-3 h-3"> Call
+                </button>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="w-full lg:w-[25%] bg-white shadow-lg rounded-2xl p-4">
+            <div class="flex justify-between items-center mb-4">
+                <div class="flex items-center gap-2">
+                    <img src="assets/clock.png" alt="history" class="w-6 h-6 rounded-full">
+                    <h2 class="text-lg font-bold text-gray-800">Call History</h2>
+                </div>
+                <button id="clearHistory" class="px-3 py-1.5 bg-green-500 text-white rounded-full hover:bg-green-600 text-sm">Clear</button>
+            </div>
+
+          <ul id="historyList" class="space-y-2">
+            <!-- History -->
+          </ul>
+        </div>
+  </script>
+
+
+  <script src="script.js"></script>
+
 </body>
 </html>
